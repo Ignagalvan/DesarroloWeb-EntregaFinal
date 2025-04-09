@@ -1,0 +1,16 @@
+@use '../base/variables' as *;
+
+/* montserrat estilo de letra*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: $colorWhite;
+    text-decoration: none;
+}
+

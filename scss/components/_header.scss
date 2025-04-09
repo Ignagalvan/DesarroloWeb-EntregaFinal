@@ -1,0 +1,76 @@
+@use '../base/variables' as *;
+@use '../utilities/mixins' as *;
+
+/* estilos header */
+header {
+    .top-header {
+        background-color: $color2;
+        padding: 20px 30px;
+        width: 100%;
+        gap: 10px;
+        @include flex();
+
+        .logo-container {
+            column-gap: 10px;
+            @include flex();
+
+
+            img {
+                width: 50px;
+            }
+
+            h1 {
+                color: $colorWhite;
+                font-size: $h1;
+            }
+        }
+
+        .user-links {
+            gap: 20px;
+            @include flex();
+        }
+    }
+
+    .navbar {
+        background-color: $color1;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 15px;
+
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            margin: 0 auto;
+            gap: 30px;
+        }
+
+        a {
+            position: relative;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                color: #ffffff;
+                text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff;
+            }
+        }
+    }
+
+    .navbar-toggler {
+        border: 1px solid $colorWhite;
+
+        &-icon {
+            filter: invert(1);
+        }
+    }
+
+    .navbar-nav {
+        .nav-link {
+            font-weight: normal !important;
+            color: $colorWhite;
+        }
+    }
+}
